@@ -7,6 +7,7 @@
 # Arguments:
 #  None
 function main() {
+  # only build arm64-v8a for android, because other architectures are not supported by the demo
   python scripts/platform_builder.py \
     --platform=android \
     --arch=arm64-v8a \
